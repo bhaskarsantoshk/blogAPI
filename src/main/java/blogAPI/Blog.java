@@ -1,14 +1,27 @@
 package blogAPI;
 
+import javax.persistence.*;
+
+@Table(name = "Blog")
+@Entity
 public class Blog {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    @Column(name ="title")
     private String title;
+    @Column (name = "content")
     private String content;
 
     public Blog(int id, String title, String content) {
         this.id = id;
         this.title = title;
         this.content = content;
+    }
+
+    public Blog(String title, String content) {
+        this.setTitle(title);
+        this.setContent(content);
     }
 
     public Blog(){
