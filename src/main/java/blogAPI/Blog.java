@@ -1,4 +1,4 @@
-package com.google.www;
+package blogAPI;
 
 public class Blog {
     private int id;

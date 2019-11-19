@@ -1,4 +1,4 @@
-package com.google.www;
+package blogAPI;
 
 import java.util.ArrayList;
 import java.util.List;

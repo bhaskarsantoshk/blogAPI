@@ -1,4 +1,4 @@
-package com.google.www;
+package blogAPI;
 
 import org.springframework.web.bind.annotation.*;
 
